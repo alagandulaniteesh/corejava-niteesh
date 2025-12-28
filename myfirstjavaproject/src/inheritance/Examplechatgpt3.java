@@ -21,6 +21,7 @@ class C extends B{
 public class Examplechatgpt3 {
 	public static void main(String[] args) {
 		C b1= new C();
+	
 		
 
 	}
