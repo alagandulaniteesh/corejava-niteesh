@@ -42,14 +42,14 @@ public class NestedCase {// open brace of class
 				switch (fruits) {// open brace for types of fruits
 				case "apple", "APPLE" -> {// open brace for apple
 					System.out.println("PRICE OF APPLES IS 200 PER KG");
-					int kg ;
-					do {//open brace for do to check the correct quantity is entered or not
-					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
-					    kg = sc.nextInt();
+					int kg;
+					do {// open brace for do to check the correct quantity is entered or not
+						System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+						kg = sc.nextInt();
 
-					    if (kg < 0 || kg > 3) {
-					        System.out.println("INVALID QUANTITY! Please enter between 0 and 3.");
-					    }
+						if (kg < 0 || kg > 3) {
+							System.out.println("INVALID QUANTITY! Please enter between 0 and 3.");
+						}
 					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 200;
@@ -86,14 +86,14 @@ public class NestedCase {// open brace of class
 
 				case "banana", "BANANA" -> {// open brace for banana
 					System.out.println("PRICE OF BANANA IS 80 PER DOZEN");
-					int kg ;
-					do {//open brace for do to check the correct quantity is entered or not
-					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
-					    kg = sc.nextInt();
+					int kg;
+					do {// open brace for do to check the correct quantity is entered or not
+						System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+						kg = sc.nextInt();
 
-					    if (kg < 0 || kg > 3) {
-					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
-					    }
+						if (kg < 0 || kg > 3) {
+							System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+						}
 					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 80;
@@ -125,17 +125,17 @@ public class NestedCase {// open brace of class
 
 				case "mango", "MANGO" -> {// open brace for MANGO
 					System.out.println("PRICE OF MANGO  IS 100 PER KG");
-					int kg ;
-					do {//open brace for do to check the correct quantity is entered or not
-					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
-					    kg = sc.nextInt();
+					int kg;
+					do {// open brace for do to check the correct quantity is entered or not
+						System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+						kg = sc.nextInt();
 
-					    if (kg < 0 || kg > 3) {
-					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
-					    }
+						if (kg < 0 || kg > 3) {
+							System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+						}
 					} while (kg < 0 || kg > 3);
 
-					sc.nextLine(); 
+					sc.nextLine();
 					int cost = 100;
 					switch (kg) {// open brace for kgs
 					case 0 -> {
@@ -177,14 +177,14 @@ public class NestedCase {// open brace of class
 				case "potato" -> {
 					System.out.println("PRICE OF POTATO IS 50 PER KG");
 					int kg;
-					do {//open brace for do to check the correct quantity is entered or not
-					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
-					    kg = sc.nextInt();
+					do {// open brace for do to check the correct quantity is entered or not
+						System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+						kg = sc.nextInt();
 
-					    if (kg < 0 || kg > 3) {
-					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
-					    }
-					} while (kg < 0 || kg > 3); 
+						if (kg < 0 || kg > 3) {
+							System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+						}
+					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 50;
 					switch (kg) {// open brace for kgs
@@ -216,15 +216,15 @@ public class NestedCase {// open brace of class
 				default -> System.out.println("⚠ INVALID INPUT!1PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
 				case "tomato" -> {// open brace for tomato
 					System.out.println("PRICE OF TOMATO IS 30 PER KG");
-					int kg ;
-					do {//open brace for do to check the correct quantity is entered or not
-					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
-					    kg = sc.nextInt();
+					int kg;
+					do {// open brace for do to check the correct quantity is entered or not
+						System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+						kg = sc.nextInt();
 
-					    if (kg < 0 || kg > 3) {
-					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
-					    }
-					} while (kg < 0 || kg > 3); 
+						if (kg < 0 || kg > 3) {
+							System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+						}
+					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 30;
 					switch (kg) {// open brace for kgs
@@ -255,13 +255,13 @@ public class NestedCase {// open brace of class
 				case "carrot" -> {// open brace for carrot
 					System.out.println("PRICE OF carrot IS 60 PER KG");
 					int kg;
-					do {//open brace for do to check the correct quantity is entered or not
-					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
-					    kg = sc.nextInt();
+					do {// open brace for do to check the correct quantity is entered or not
+						System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+						kg = sc.nextInt();
 
-					    if (kg < 0 || kg >3) {
-					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
-					    }
+						if (kg < 0 || kg > 3) {
+							System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+						}
 					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 60;
@@ -315,7 +315,7 @@ public class NestedCase {// open brace of class
 		System.out.println("-------------------------------------------");
 		System.out.println("🙏 THANK YOU FOR SHOPPING 🙏");
 		System.out.println("========================================================");
-	sc.close();
+		sc.close();
 	}// close brace for main method
-	
+
 }// close brace for class
