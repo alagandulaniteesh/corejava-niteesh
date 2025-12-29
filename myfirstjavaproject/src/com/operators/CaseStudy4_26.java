@@ -33,9 +33,18 @@ public class CaseStudy4_26 {
 		// LOGICAL OPERATORS
 		System.out.println("ARE YOU A PERMANENT ?");
 		String stay = sc.next();
-		System.out.println("PERMANENT AND MORE THAN 3 YEARS EXPERIENCE: " + (stay.equals("yes") && experience > 3));
-		
-		System.out.println("PERMANENT OR MORE THAN 5 YEARS EXPERIENCE: " + (stay.equals("yes") || experience > 5));
+		if(stay.equals("yes")&&experience > 3 ) {
+			System.out.println("EMPLOYEE IS PERMANENT AND HAS 3 YEARS OF EXPERIENCE");
+		}
+		else {
+			System.out.println("EMPLOYEE NOT PERMANENT");
+		}
+		if(stay.equals("yes")||experience > 5 ) {
+			System.out.println(" EITHER EMPLOYEE IS PERMANENT OR HAS 5 YEARS OF EXPERIENCE");
+		}
+		else {
+			System.out.println("EMPLOYEE IS NOT PERMANENT");
+		}
 
 		// ASSIGNMENT OPERATORS
 		bonus += 1000; // compound assignment operator
