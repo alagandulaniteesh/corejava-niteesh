@@ -1,16 +1,26 @@
 package logicalstatements;
 
 import java.util.Scanner;
+
 // program for creating a billing system for fruits and vegetable market using nested switch and case 
 public class NestedCase {// open brace of class
 
 	public static void main(String[] args) {// open brace for main method
-		System.out.println("WELCOME TO THE E-FRUITS AND VEGETABLE MARKET");
+		System.out.println("╔══════════════════════════════════════════════╗");
+		System.out.println("  🍎 WELCOME TO E-FRUITS & VEGETABLE MARKET 🥕   ");
+		System.out.println("╚══════════════════════════════════════════════╝");
 		System.out.println("========================================================");
-		System.out.println(
-				"AVALIABLE ITEMS IN FURITS\n-|APPLE  🍎 |200RS PER KG\n-|BANANA 🍌 |80RS PER DOZEN \n-|MANGO  🥭 |100RS PER KG");
-		System.out.println(
-				"AVALIABLE ITEMS IN VEGETABLES\n-|POTATO 🥔 |50RS PER KG\n-|TOMATO 🍅 |30 PER KG\n-|CARROT 🥕 |60 PER KG");
+
+		System.out.println("\n📌 AVAILABLE FRUITS");
+		System.out.println("-----------------------------------------");
+		System.out.println("🍎 Apple   - 200 Rs / Kg");
+		System.out.println("🍌 Banana  - 80  Rs / Dozen");
+		System.out.println("🥭 Mango   - 100 Rs / Kg");
+		System.out.println("\n📌 AVAILABLE VEGETABLES");
+		System.out.println("-----------------------------------------");
+		System.out.println("🥔 Potato  - 50  Rs / Kg");
+		System.out.println("🍅 Tomato  - 30  Rs / Kg");
+		System.out.println("🥕 Carrot  - 60  Rs / Kg");
 		System.out.println("========================================================");
 		Scanner sc = new Scanner(System.in);
 		int total = 0;// to calculate the total final bill
@@ -32,9 +42,15 @@ public class NestedCase {// open brace of class
 				switch (fruits) {// open brace for types of fruits
 				case "apple", "APPLE" -> {// open brace for apple
 					System.out.println("PRICE OF APPLES IS 200 PER KG");
-					System.out.println(
-							"ENTER THE QUANTITY YOU WANT\nENTER 0 FOR HALF KG \nFOR KG'S ENTER THE QUANTITY OF KG'S YOU WANT \nLIMIT  UPTO 3KGS ONLY");
-					int kg = sc.nextInt();
+					int kg ;
+					do {//open brace for do to check the correct quantity is entered or not
+					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+					    kg = sc.nextInt();
+
+					    if (kg < 0 || kg > 3) {
+					        System.out.println("INVALID QUANTITY! Please enter between 0 and 3.");
+					    }
+					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 200;
 					switch (kg) {// open brace for kgs
@@ -61,19 +77,24 @@ public class NestedCase {// open brace of class
 					default -> {
 						System.out.println("PLEASE ENTER IN THE RANGE OF 1-3");
 					}
-					
+
 					}// close brace for kgs
-					
-					
+
 					System.out.println("========================================================");
 				} // close brace for apple
-				default -> System.out.println("PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
+				default -> System.out.println("⚠ INVALID INPUT!PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
 
 				case "banana", "BANANA" -> {// open brace for banana
 					System.out.println("PRICE OF BANANA IS 80 PER DOZEN");
-					System.out.println(
-							"ENTER THE QUANTITY YOU WANT\nENTER 0 FOR HALF DOZEN\nFOR KG'S ENTER THE QUANTITY OF DOZENS YOU WANT\nLIMIT  UPTO 3 DOZENS ONLY");
-					int kg = sc.nextInt();
+					int kg ;
+					do {//open brace for do to check the correct quantity is entered or not
+					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+					    kg = sc.nextInt();
+
+					    if (kg < 0 || kg > 3) {
+					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+					    }
+					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 80;
 					switch (kg) {// open brace for dozens
@@ -101,13 +122,20 @@ public class NestedCase {// open brace of class
 					}// close brace for dozens
 					System.out.println("========================================================");
 				} // close braces for banana
-				
+
 				case "mango", "MANGO" -> {// open brace for MANGO
 					System.out.println("PRICE OF MANGO  IS 100 PER KG");
-					System.out.println(
-							"ENTER THE QUANTITY YOU WANT\nENTER 0 FOR HALF KG\nFOR KG'S ENTER THE QUANTITY OF KG YOU WANT\nLIMIT  UPTO 3 DOZENS ONLY");
-					int kg = sc.nextInt();
-					sc.nextLine();
+					int kg ;
+					do {//open brace for do to check the correct quantity is entered or not
+					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+					    kg = sc.nextInt();
+
+					    if (kg < 0 || kg > 3) {
+					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+					    }
+					} while (kg < 0 || kg > 3);
+
+					sc.nextLine(); 
 					int cost = 100;
 					switch (kg) {// open brace for kgs
 					case 0 -> {
@@ -132,26 +160,31 @@ public class NestedCase {// open brace of class
 					}
 					default -> System.out.println("PLEASE ENTER IN THE RANGE OF 1-3");
 					}// close brace for kgs
-					
+
 					System.out.println("========================================================");
 				} // close brace for MANGO
-				
+
 				}// close brace for types fruits
-					
-				
+
 			} // close of case 1
 
 			case 2 -> {// open brace for case 2
 				System.out.println("YOU SELECTED VEGETABLES");
 				System.out.println("SELECT THE VEGETABLES YOU WANT:\n POTATO\n TOMATO \n CARROT");
 				System.out.println("========================================================");
-				String veg = sc.next();
+				String veg = sc.nextLine();
 				switch (veg) {
 				case "potato" -> {
 					System.out.println("PRICE OF POTATO IS 50 PER KG");
-					System.out.println(
-							"ENTER THE QUANTITY YOU WANT\nENTER 0 FOR HALF KG\nFOR KG'S ENTER THE QUANTITY OF KG YOU WANT\nLIMIT  UPTO 3 KGS ONLY");
-					int kg = sc.nextInt();
+					int kg;
+					do {//open brace for do to check the correct quantity is entered or not
+					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+					    kg = sc.nextInt();
+
+					    if (kg < 0 || kg > 3) {
+					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+					    }
+					} while (kg < 0 || kg > 3); 
 					sc.nextLine();
 					int cost = 50;
 					switch (kg) {// open brace for kgs
@@ -177,15 +210,21 @@ public class NestedCase {// open brace of class
 					}
 					default -> System.out.println("PLEASE ENTER IN THE RANGE OF 1-3");
 					}// close brace for kgs
-					
+
 					System.out.println("========================================================");
 				} // close brace for potato
-				default -> System.out.println("PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
+				default -> System.out.println("⚠ INVALID INPUT!1PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
 				case "tomato" -> {// open brace for tomato
 					System.out.println("PRICE OF TOMATO IS 30 PER KG");
-					System.out.println(
-							"ENTER THE QUANTITY YOU WANT\nENTER 0 FOR HALF KG\nFOR KG'S ENTER THE QUANTITY OF KG YOU WANT\nLIMIT  UPTO 3 KGS ONLY");
-					int kg = sc.nextInt();
+					int kg ;
+					do {//open brace for do to check the correct quantity is entered or not
+					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+					    kg = sc.nextInt();
+
+					    if (kg < 0 || kg > 3) {
+					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+					    }
+					} while (kg < 0 || kg > 3); 
 					sc.nextLine();
 					int cost = 30;
 					switch (kg) {// open brace for kgs
@@ -215,9 +254,15 @@ public class NestedCase {// open brace of class
 				} // CLOSE brace for tomato
 				case "carrot" -> {// open brace for carrot
 					System.out.println("PRICE OF carrot IS 60 PER KG");
-					System.out.println(
-							"ENTER THE QUANTITY YOU WANT\nENTER 0 FOR HALF KG \nFOR KG'S ENTER THE QUANTITY OF KG YOU WANT \nLIMIT  UPTO 3 KGS ONLY");
-					int kg = sc.nextInt();
+					int kg;
+					do {//open brace for do to check the correct quantity is entered or not
+					    System.out.println("ENTER QUANTITY (0 = HALF KG, 1–3 = KG):");
+					    kg = sc.nextInt();
+
+					    if (kg < 0 || kg >3) {
+					        System.out.println(" INVALID QUANTITY! Please enter between 0 and 3.");
+					    }
+					} while (kg < 0 || kg > 3);
 					sc.nextLine();
 					int cost = 60;
 					switch (kg) {// open brace for kgs
@@ -243,16 +288,15 @@ public class NestedCase {// open brace of class
 					}
 					default -> System.out.println("PLEASE ENTER IN THE RANGE OF 1-3");
 					}// close brace for kgs
-					
+
 					System.out.println("========================================================");
 				} // close brace for carrot
-			
+
 				}// close brace for veg
 			} // close brace for case 2
 			}// close for fruits or vegetables
 			System.out.println("========================================================");
 			System.out.println("\nDO YOU WANT TO CONTINUE? (yes/no)");
-			sc.nextLine();
 			choice = sc.nextLine();
 			System.out.println("========================================================");
 		} // close of do
@@ -261,15 +305,17 @@ public class NestedCase {// open brace of class
 		String carry = sc.next();
 		if (carry.equals("yes")) {
 			System.out.println("ENTER WHO MAY CARRY BAGS YOU WANT");
-			int b=sc.nextInt();
-			total=total+15*b;
-			bill = bill + "CARRY BAG\t"+b+"\t"+b*15+"\n";
+			int b = sc.nextInt();
+			total = total + 15 * b;
+			bill = bill + "CARRY BAG\t" + b + "\t" + b * 15 + "\n";
 		}
-		System.out.println("=================== FINAL BILL =========================");
+		System.out.println("=================== 🧾 FINAL BILL =========================");
 		System.out.println(bill);
 		System.out.println("TOTAL BILL\t\t" + total);
 		System.out.println("-------------------------------------------");
-		System.out.println("THANK YOU FOR SHOPING");
+		System.out.println("🙏 THANK YOU FOR SHOPPING 🙏");
 		System.out.println("========================================================");
+	sc.close();
 	}// close brace for main method
+	
 }// close brace for class
