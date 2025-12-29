@@ -1,9 +1,8 @@
-package com.logicalstatments;
+package logicalstatements;
 
 import java.util.Scanner;
 
-public class NukariPortal {
-
+public class Nukari {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("WELCOME TO THE NUKARI PORTAL ");

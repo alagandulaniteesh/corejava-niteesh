@@ -20,7 +20,7 @@ public class CaseStudy4_26 {
 		// RELATIONAL OPERATORS
 		System.out.println("ENTER THE NO OF YEARS OF EXPERIENCE");
 		int experience = sc.nextInt();
-		if (experience > 3) {// relational ">" operator
+		if (experience >= 3) {// relational ">" operator
 			System.out.println("EMPLOYEE HAS MORE THEN THAN 3 YEARS OF EXPERIENCE");
 		} else {
 			System.out.println("EMPLOYEE HAS LESS 3 YEARS OF EXPERIENCE");
