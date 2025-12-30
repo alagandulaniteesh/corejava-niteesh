@@ -40,7 +40,7 @@ public class NestedCase {// open brace of class
 				System.out.println("========================================================");
 				String fruits = sc.nextLine();
 				switch (fruits) {// open brace for types of fruits
-				case "apple", "APPLE" -> {// open brace for apple
+				case "apple", "APPLE","Apple","a","A" -> {// open brace for apple
 					System.out.println("PRICE OF APPLES IS 200 PER KG");
 					int kg;
 					do {// open brace for do to check the correct quantity is entered or not
@@ -84,7 +84,7 @@ public class NestedCase {// open brace of class
 				} // close brace for apple
 				default -> System.out.println("⚠ INVALID INPUT!PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
 
-				case "banana", "BANANA" -> {// open brace for banana
+				case "banana", "BANANA","Banana","b","B" -> {// open brace for banana
 					System.out.println("PRICE OF BANANA IS 80 PER DOZEN");
 					int kg;
 					do {// open brace for do to check the correct quantity is entered or not
@@ -123,7 +123,7 @@ public class NestedCase {// open brace of class
 					System.out.println("========================================================");
 				} // close braces for banana
 
-				case "mango", "MANGO" -> {// open brace for MANGO
+				case "mango", "MANGO","M","m","Mango" -> {// open brace for MANGO
 					System.out.println("PRICE OF MANGO  IS 100 PER KG");
 					int kg;
 					do {// open brace for do to check the correct quantity is entered or not
@@ -174,7 +174,7 @@ public class NestedCase {// open brace of class
 				System.out.println("========================================================");
 				String veg = sc.nextLine();
 				switch (veg) {
-				case "potato" -> {
+				case "potato","POTATO","P","p","Potato" -> {
 					System.out.println("PRICE OF POTATO IS 50 PER KG");
 					int kg;
 					do {// open brace for do to check the correct quantity is entered or not
@@ -214,7 +214,7 @@ public class NestedCase {// open brace of class
 					System.out.println("========================================================");
 				} // close brace for potato
 				default -> System.out.println("⚠ INVALID INPUT!1PLEASE ENTER THE ITEMS THAT ARE LISTED IN THE MENU");
-				case "tomato" -> {// open brace for tomato
+				case "tomato","TOMATO","Tomato","T","t" -> {// open brace for tomato
 					System.out.println("PRICE OF TOMATO IS 30 PER KG");
 					int kg;
 					do {// open brace for do to check the correct quantity is entered or not
@@ -252,7 +252,7 @@ public class NestedCase {// open brace of class
 					}// close brace for kgs
 					System.out.println("========================================================");
 				} // CLOSE brace for tomato
-				case "carrot" -> {// open brace for carrot
+				case "carrot","CARROT","Carrot","c","C" -> {// open brace for carrot
 					System.out.println("PRICE OF carrot IS 60 PER KG");
 					int kg;
 					do {// open brace for do to check the correct quantity is entered or not
