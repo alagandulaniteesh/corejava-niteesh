@@ -9,9 +9,8 @@ public class TestDemo3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER A NUMBER TO CHECK WHETER THE NUMBER IS PRIME OR NOT");
 		int a = sc.nextInt();
-		int b = 1;
 		int count = 0;
-		for (b = 1; b <= a; b++) {
+		for (int b = 1; b <= a; b++) {
 			if (a % b == 0) {
 				count += 1;
 			}
