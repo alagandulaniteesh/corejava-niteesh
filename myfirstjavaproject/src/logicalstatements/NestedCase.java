@@ -303,12 +303,21 @@ public class NestedCase {// open brace of class
 		while (choice.equals("yes"));
 		System.out.println("DO YOU WANT A CARRY BAG?(yes/no)\nEACH CARRY BAG COST IS 15RS");
 		String carry = sc.next();
+<<<<<<< HEAD
 		if (carry.equals("yes")) {
 			System.out.println("ENTER WHO MAY CARRY BAGS YOU WANT");
 			int b = sc.nextInt();
 			total = total + 15 * b;
 			bill = bill + "CARRY BAG\t" + b + "\t" + b * 15 + "\n";
 		}
+=======
+		if (carry.equals("yes")) {//open brace for if condition
+			System.out.println("ENTER WHO MAY CARRY BAGS YOU WANT");
+			int b = sc.nextInt();
+			total = total + 15 * b;
+			bill = bill + "CARRY BAG\t" + b + "\t" + b * 15 + "\n";
+		}//close brace for if condition		
+>>>>>>> branch 'master' of https://github.com/alagandulaniteesh/corejava-niteesh
 		System.out.println("=================== 🧾 FINAL BILL =========================");
 		System.out.println(bill);
 		System.out.println("TOTAL BILL\t\t" + total);
