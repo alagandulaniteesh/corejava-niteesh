@@ -16,7 +16,7 @@ public class TestDemo1 {
 			}
 			}
 		if(total==n) {
-			System.out.println("\nperfect number");
+			System.out.println("\nperfect Number");
 		}
 	}
 
